@@ -1,2 +1,7 @@
-﻿  Zombie.cpp
-  PapuEngine.vcxproj -> D:\_UPC\Funda\TA2\Debug\PapuEngine.exe
+﻿  MainGame.cpp
+d:\_upc\funda\plataforma2.4\papuengine\maingame.cpp(32): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+d:\_upc\funda\plataforma2.4\papuengine\maingame.cpp(38): warning C4018: '<': no coinciden signed/unsigned
+d:\_upc\funda\plataforma2.4\papuengine\maingame.cpp(122): warning C4244: 'argumento': conversión de 'Sint32' a 'float'; posible pérdida de datos
+  Zombie.cpp
+  Generando código...
+  PapuEngine.vcxproj -> D:\_UPC\Funda\Plataforma2.4\Debug\PapuEngine.exe

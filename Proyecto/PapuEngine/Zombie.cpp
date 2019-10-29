@@ -17,23 +17,15 @@ void Zombie::update(const std::vector<std::string>& levelData,
 	
 	collideWithLevel(levelData);
 
-	Human* closeHuman = getNearestHuman(humans);
+	Human* closeHuman = getNearestHuman(humans, zombies);
 	if (closeHuman != nullptr) {
 		glm::vec2 direction = glm::normalize(
 			closeHuman->getPosition() - _position);
 		_position += direction*_speed;
 	}
-	for (size_t i = 0; i < humans.size(); i++) {
-		glm::vec2 pos = humans[i]->getPosition();
-		if (collideWithAgent(humans[i])) {
-			humans.erase(humans.begin() + i);
-			zombies.push_back(new Zombie());
-			zombies.back()->init(0.3f, pos);
-		}
-	}
 }
 
-Human* Zombie::getNearestHuman(std::vector<Human*>& humans) {
+Human* Zombie::getNearestHuman(std::vector<Human*>& humans, std::vector<Zombie*>& zombies) {
 	Human* closestHuman = nullptr;
 	float smallestDistance = 88888888888.0f;
 	for (size_t i = 0; i < humans.size(); i++)
@@ -44,9 +36,14 @@ Human* Zombie::getNearestHuman(std::vector<Human*>& humans) {
 			smallestDistance = distance;
 			closestHuman = humans[i];
 		}
+		if (collideWithAgent(humans[i])) {
+			glm::vec2 pos = humans[i]->getPosition();
+			humans.erase(humans.begin() + i);
+			zombies.push_back(new Zombie());
+			zombies.back()->init(0.3f, pos);
+		}
 	}
 	return closestHuman;
-
 }
 
 

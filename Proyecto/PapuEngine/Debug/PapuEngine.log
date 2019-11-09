@@ -1,8 +1,41 @@
-﻿  MainGame.cpp
-d:\_upc\funda\proyecto\papuengine\maingame.cpp(32): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-d:\_upc\funda\proyecto\papuengine\maingame.cpp(38): warning C4018: '<': no coinciden signed/unsigned
-d:\_upc\funda\proyecto\papuengine\maingame.cpp(122): warning C4244: 'argumento': conversión de 'Sint32' a 'float'; posible pérdida de datos
-  Zombie.cpp
+﻿  Agent.cpp
+  App.cpp
+  Background.cpp
+  Button.cpp
+  Camera2D.cpp
+  EndScreen.cpp
+  Enemy.cpp
+d:\_upc\funda\framework\papuengine\enemy.cpp(9): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Error.cpp
+  Game.cpp
+  GLS_Program.cpp
+  ImageLoader.cpp
+d:\_upc\funda\framework\papuengine\imageloader.cpp(36): warning C4244: '=': conversión de 'unsigned long' a 'float'; posible pérdida de datos
+d:\_upc\funda\framework\papuengine\imageloader.cpp(37): warning C4244: '=': conversión de 'unsigned long' a 'float'; posible pérdida de datos
+  InputManager.cpp
+  IOManager.cpp
+d:\_upc\funda\framework\papuengine\iomanager.cpp(15): warning C4244: 'inicializando': conversión de 'std::streamoff' a 'int'; posible pérdida de datos
+d:\_upc\funda\framework\papuengine\iomanager.cpp(18): warning C4244: '-=': conversión de 'std::streamoff' a 'int'; posible pérdida de datos
   main.cpp
+  MenuScreen.cpp
+  PapuEngine.cpp
+  picoPNG.cpp
+  PlayScreen.cpp
+d:\_upc\funda\framework\papuengine\playscreen.cpp(86): warning C4244: 'argumento': conversión de 'Sint32' a 'float'; posible pérdida de datos
+  ResourceManager.cpp
+  ScreenList.cpp
   Generando código...
-  PapuEngine.vcxproj -> D:\_UPC\Funda\Proyecto\Debug\PapuEngine.exe
+d:\_upc\funda\framework\papuengine\camera2d.cpp(38): warning C4715: 'Camera2D::isBoxInView': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  Ship.cpp
+  Sprite.cpp
+  SpriteBacth.cpp
+d:\_upc\funda\framework\papuengine\spritebacth.cpp(45): warning C4018: '<': no coinciden signed/unsigned
+d:\_upc\funda\framework\papuengine\spritebacth.cpp(73): warning C4018: '<': no coinciden signed/unsigned
+  SpriteFont.cpp
+  TextureCache.cpp
+  Timing.cpp
+d:\_upc\funda\framework\papuengine\timing.cpp(22): warning C4244: 'argumento': conversión de 'float' a 'Uint32'; posible pérdida de datos
+  Window.cpp
+  Generando código...
+  PapuEngine.vcxproj -> D:\_UPC\Funda\Framework\Debug\PapuEngine.exe
